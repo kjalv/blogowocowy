@@ -1,0 +1,182 @@
+* {
+    margin: 0px
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5dc;
+    text-align: center;
+}
+
+header {
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+nav {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 22px;
+    padding-bottom: 25px
+}
+
+ul {
+    display: flex;
+    justify-content: space-around
+}
+
+li {
+    padding: 5px;
+    list-style: none
+}
+
+article {
+    width: 500px;
+    padding-bottom: 100px;
+    margin: 8px auto;
+}
+
+article p {
+    margin-bottom: 25px;
+}
+
+
+section a {
+    display: inline-block;
+    margin-bottom: 70px
+}
+
+img {
+    transition: .5s;
+}
+
+img:hover {
+    transform: scale(1.2)
+}
+
+article img {
+    width: 400px;
+    height: 400px;
+}
+
+
+section img {
+    width: 200px;
+    height: 200px;
+    opacity: 0.6;
+    transition: .3s
+}
+
+section img:hover {
+    opacity: 1
+}
+
+a {
+    color: #ffa500;
+    transition: .5s;
+    text-decoration: none;
+    transition: .4;
+}
+
+a:hover {
+    color: #8b0000;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #fafa75;
+    padding: 6px 10px;
+    margin: 8px;
+    color: #000000;
+    border-radius: 9px;
+    transition: .2s;
+    font-size: 20px
+}
+
+.button:hover {
+    color: #000000;
+    background-color: #fad475;
+    padding: 8px 12px 8px 12px;
+    font-size: 24px;
+    border-radius: 11px;
+}
+
+footer {
+    background-color: #000000;
+    color: #808080;
+    padding: 10px;
+    margin: 0px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    opacity: 0.8
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #ffa500;
+    width: 0%;
+}
+
+nav a {
+    color: #ffa500;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    transition: .3;
+}
+
+nav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #ffa500;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.link:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+
+::selection {
+    background: #c4c4c4;
+}
+
+strong {
+    color: red;
+}
